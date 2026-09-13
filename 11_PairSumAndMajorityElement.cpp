@@ -3,7 +3,7 @@
 using namespace std;
 
 // Pair Sum in Sorted array/vector   Input-{2,7,11,15} target-15 Return 7,11
-// Brute force
+// Brute force     Time complexity=O(n*n)
 vector<int> pairSum(vector<int> vec, int target)
 {
     vector<int> arr;
@@ -22,7 +22,7 @@ vector<int> pairSum(vector<int> vec, int target)
     }
     return arr;
 }
-//Two Pointer approach  Time complexibi
+//Two Pointer approach  Time complexity=O(n)
 vector<int> pairSum2(vector<int> vec,int target){
     int i=0,j=vec.size()-1;
     vector<int> ans;
@@ -41,7 +41,7 @@ vector<int> pairSum2(vector<int> vec,int target){
 }
 
 //Majority Element  Input={2,2,1,1,1,2,2}  majority element occous >= n/2 times  resut 2
-//Brute force
+//Brute force  Time complixity=O(n*n)
 int majorityElement(vector<int> vec){
     int n=vec.size();
     int count=0;
@@ -59,7 +59,7 @@ int majorityElement(vector<int> vec){
     return -1;
 }
 
-//Moore's voting algorithm
+//Moore's voting algorithm    Time complexity=O(n)
 int majorityElement2(vector<int> vec){
     int freq=0,ans=0;
     for(int i=0;i<vec.size();i++){
