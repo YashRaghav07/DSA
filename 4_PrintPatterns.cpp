@@ -571,7 +571,7 @@ void printPattern23(int n){
     int i,j,spaces;
     for(i=0;i<n;i++){
         cout<<"*";
-        if(i<=n/2) spaces=2*i-1;
+        if(i<n/2) spaces=2*i-1;
         else spaces=n-i;
         for(j=0;j<spaces;j++){
             cout<<" ";
